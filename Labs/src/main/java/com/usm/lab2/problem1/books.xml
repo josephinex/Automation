@@ -1,0 +1,86 @@
+<CATALOG>
+    <BOOK genre="Programming">
+        <TITLE>Effective Java Programming Language Guide</TITLE>
+        <AUTHOR>Joshua Bloch</AUTHOR>
+        <COUNTRY>USA</COUNTRY>
+        <PRICE>20.90</PRICE>
+        <YEAR>2001</YEAR>
+    </BOOK>
+    <BOOK genre="Programming">
+        <TITLE>Core Java Se 9 for the Impatient</TITLE>
+        <AUTHOR>Cay S Horstmann</AUTHOR>
+        <COUNTRY>UK</COUNTRY>
+        <PRICE id="1">35.05</PRICE>
+        <YEAR>2017</YEAR>
+    </BOOK>
+    <BOOK genre="Programming">
+        <TITLE>Java 9 Modularity: Patterns and Practices for Developing Maintainable Applications </TITLE>
+        <AUTHOR>MAK</AUTHOR>
+        <COUNTRY>USA</COUNTRY>
+        <PRICE id="2">36.10</PRICE>
+        <YEAR>2017</YEAR>
+    </BOOK>
+    <BOOK genre="Programming">
+        <TITLE>Java 8 in Action</TITLE>
+        <AUTHOR>Raoul-Gabriel Urma</AUTHOR>
+        <COUNTRY>US</COUNTRY>
+        <PRICE>20.20</PRICE>
+        <YEAR>2016</YEAR>
+    </BOOK>
+    <BOOK genre="Programming">
+        <TITLE>Mastering Lambdas: Java Programming in a Multicore World</TITLE>
+        <AUTHOR>Maurice Naftalin</AUTHOR>
+        <COUNTRY>EU</COUNTRY>
+        <PRICE>39.90</PRICE>
+        <YEAR>2016</YEAR>
+    </BOOK>
+    <BOOK genre="Programming">
+        <TITLE>Java 8 Lambdas: Pragmatic Functional Programming</TITLE>
+        <AUTHOR>Richard Warburton</AUTHOR>
+        <COUNTRY>US</COUNTRY>
+        <PRICE>29.90</PRICE>
+        <YEAR>2016</YEAR>
+    </BOOK>
+    <BOOK genre="Programming">
+        <TITLE>The Well-Grounded Java Developer: Vital techniques of Java 7 and polyglot programming</TITLE>
+        <AUTHOR>Benjamin J. Evans</AUTHOR>
+        <COUNTRY>US</COUNTRY>
+        <PRICE>28.10</PRICE>
+        <YEAR>2015</YEAR>
+    </BOOK>
+    <BOOK genre="Programming">
+        <TITLE>Java Concurrency in Practice</TITLE>
+        <AUTHOR>Brian Goetz</AUTHOR>
+        <COUNTRY>US</COUNTRY>
+        <PRICE>38.50</PRICE>
+        <YEAR>2015</YEAR>
+    </BOOK>
+    <BOOK genre="Programming">
+        <TITLE>Bitter Java</TITLE>
+        <AUTHOR>Bruce Tate</AUTHOR>
+        <COUNTRY>EU</COUNTRY>
+        <PRICE>21.80</PRICE>
+        <YEAR>2016</YEAR>
+    </BOOK>
+    <BOOK genre="Programming">
+        <TITLE>Java Puzzlers: Traps, Pitfalls, and Corner Cases</TITLE>
+        <AUTHOR>Joshua Bloch</AUTHOR>
+        <COUNTRY>USA</COUNTRY>
+        <PRICE>28.70</PRICE>
+        <YEAR>2016</YEAR>
+    </BOOK>
+    <BOOK genre="Programming">
+        <TITLE>Java EE 7 Essentials</TITLE>
+        <AUTHOR>Arun Gupta</AUTHOR>
+        <COUNTRY>EU</COUNTRY>
+        <PRICE>20.90</PRICE>
+        <YEAR>2012</YEAR>
+    </BOOK>
+    <BOOK genre="Science Fiction">
+        <TITLE>Sociobiology</TITLE>
+        <AUTHOR>EO Wilson</AUTHOR>
+        <COUNTRY>EU</COUNTRY>
+        <PRICE>20.90</PRICE>
+        <YEAR>2012</YEAR>
+    </BOOK>
+</CATALOG>

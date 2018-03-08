@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<employee>
+    <manager level="middle">
+        <company id="5">Google</company>
+    </manager>
+    <hr level="entry">
+        <company id="1">Yahoo</company>
+    </hr>
+</employee>
