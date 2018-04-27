@@ -1,4 +1,4 @@
-package com.usm.lab4;
+package test.java.com.usm.lab4;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
