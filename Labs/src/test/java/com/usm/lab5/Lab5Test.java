@@ -14,9 +14,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class Lab5Test {
@@ -25,8 +27,38 @@ public class Lab5Test {
 
     private static Logger Log = LogManager.getLogger(Lab5Test.class);
 
+    private File file = new File("Labs/src/test/resources/application.properties");
+    private FileInputStream fileInput;
+
+    private Properties properties = new Properties();
+
+    private String url = null;
+
+    private String username = null;
+
+    private String password = null;
+
+
     @BeforeClass
     public void setup() {
+
+        try {
+            fileInput = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            properties.load(fileInput);
+            fileInput.close();
+            url = properties.getProperty("url");
+            username = properties.getProperty("username");
+            password = properties.getProperty("password");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         webDriver = new ChromeDriver();
@@ -45,12 +77,12 @@ public class Lab5Test {
         webDriver.navigate().to("https://wordpress.com/log-in");
 
         Log.info("Entering username ");
-        webDriver.findElement(By.id("usernameOrEmail")).sendKeys("tanyalab");
+        webDriver.findElement(By.id("usernameOrEmail")).sendKeys(username);
 
         webDriver.findElements(By.className("login__form-action")).get(0).findElement(By.tagName("button")).click();
 
         webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        webDriver.findElement(By.id("password")).sendKeys("Abc123456");
+        webDriver.findElement(By.id("password")).sendKeys(password);
 
         takeScreenshot(webDriver, "enter_password");
 
@@ -403,7 +435,7 @@ public class Lab5Test {
     }
 
     private void takeScreenshot(WebDriver driver, String name) {
-        if(TakesScreenshot.class.isInstance(driver)) {
+        if (TakesScreenshot.class.isInstance(driver)) {
             try {
                 File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
                 File image = File.createTempFile(name + "_", ".png");
